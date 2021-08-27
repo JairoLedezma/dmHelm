@@ -1,0 +1,77 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: rhdm-decisioncentral-rhel8
+  namespace: dmn-jairo
+  uid: bc98c9ac-13e8-42ee-800a-88a17bccde11
+  resourceVersion: '3868480'
+  generation: 2
+  creationTimestamp: '2021-08-19T19:24:17Z'
+  annotations:
+    openshift.io/display-name: Red Hat Decision Manager Decision Central 7.11
+    openshift.io/image.dockerRepositoryCheck: '2021-08-19T19:24:19Z'
+    openshift.io/provider-display-name: 'Red Hat, Inc.'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: image.openshift.io/v1
+      time: '2021-08-19T19:24:17Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:openshift.io/display-name': {}
+            'f:openshift.io/provider-display-name': {}
+        'f:spec':
+          'f:tags':
+            .: {}
+            'k:{"name":"7.11.0"}':
+              .: {}
+              'f:annotations':
+                .: {}
+                'f:description': {}
+                'f:iconClass': {}
+                'f:supports': {}
+                'f:tags': {}
+                'f:version': {}
+              'f:from':
+                .: {}
+                'f:kind': {}
+                'f:name': {}
+              'f:generation': {}
+              'f:importPolicy': {}
+              'f:name': {}
+              'f:referencePolicy':
+                .: {}
+                'f:type': {}
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+    - name: 7.11.0
+      annotations:
+        description: Red Hat Decision Manager 7.11 - Decision Central image.
+        iconClass: icon-jboss
+        supports: 'rhdm:7.11'
+        tags: rhdm
+        version: 7.11.0
+      from:
+        kind: DockerImage
+        name: 'registry.redhat.io/rhdm-7/rhdm-decisioncentral-rhel8:7.11.0'
+      generation: 2
+      importPolicy: {}
+      referencePolicy:
+        type: Local
+status:
+  dockerImageRepository: >-
+    image-registry.openshift-image-registry.svc:5000/dmn-jairo/rhdm-decisioncentral-rhel8
+  tags:
+    - tag: 7.11.0
+      items:
+        - created: '2021-08-19T19:24:19Z'
+          dockerImageReference: >-
+            registry.redhat.io/rhdm-7/rhdm-decisioncentral-rhel8@sha256:64af3908fc3014842928f8869146de4f6182f11fa4badeb5a5f53964bfebb5a9
+          image: >-
+            sha256:64af3908fc3014842928f8869146de4f6182f11fa4badeb5a5f53964bfebb5a9
+          generation: 2

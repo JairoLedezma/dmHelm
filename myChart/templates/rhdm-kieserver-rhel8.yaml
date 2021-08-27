@@ -1,0 +1,77 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: rhdm-kieserver-rhel8
+  namespace: dmn-jairo
+  uid: cf67d8df-43f9-4d8e-8bf1-415ae57a5a4a
+  resourceVersion: '3869692'
+  generation: 2
+  creationTimestamp: '2021-08-19T19:27:03Z'
+  annotations:
+    openshift.io/display-name: Red Hat Decision Manager KIE Server 7.11
+    openshift.io/image.dockerRepositoryCheck: '2021-08-19T19:27:05Z'
+    openshift.io/provider-display-name: 'Red Hat, Inc.'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: image.openshift.io/v1
+      time: '2021-08-19T19:27:03Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:openshift.io/display-name': {}
+            'f:openshift.io/provider-display-name': {}
+        'f:spec':
+          'f:tags':
+            .: {}
+            'k:{"name":"7.11.0"}':
+              .: {}
+              'f:annotations':
+                .: {}
+                'f:description': {}
+                'f:iconClass': {}
+                'f:supports': {}
+                'f:tags': {}
+                'f:version': {}
+              'f:from':
+                .: {}
+                'f:kind': {}
+                'f:name': {}
+              'f:generation': {}
+              'f:importPolicy': {}
+              'f:name': {}
+              'f:referencePolicy':
+                .: {}
+                'f:type': {}
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+    - name: 7.11.0
+      annotations:
+        description: Red Hat Decision Manager 7.11 - KIE Server image.
+        iconClass: icon-jboss
+        supports: 'rhdm:7.11'
+        tags: rhdm
+        version: 7.11.0
+      from:
+        kind: DockerImage
+        name: 'registry.redhat.io/rhdm-7/rhdm-kieserver-rhel8:7.11.0'
+      generation: 2
+      importPolicy: {}
+      referencePolicy:
+        type: Local
+status:
+  dockerImageRepository: >-
+    image-registry.openshift-image-registry.svc:5000/dmn-jairo/rhdm-kieserver-rhel8
+  tags:
+    - tag: 7.11.0
+      items:
+        - created: '2021-08-19T19:27:05Z'
+          dockerImageReference: >-
+            registry.redhat.io/rhdm-7/rhdm-kieserver-rhel8@sha256:4e9544b2120f2e47748e26ac48bf1fd8f2888b68b1e80347cc376987fea83079
+          image: >-
+            sha256:4e9544b2120f2e47748e26ac48bf1fd8f2888b68b1e80347cc376987fea83079
+          generation: 2

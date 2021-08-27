@@ -1,0 +1,23 @@
+
+# Default values for React-Nginx.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Name of the kieserver deployment
+APPLICATION_NAME: kie-server
+# The name where credentials secret are found
+CREDENTIALS_SECRET: credentials
+# Where we can find the keystore file in our secrets
+KIE_SERVER_HTTPS_SECRET: https-keystore
+
+KIE_SERVER_CONTAINER_DEPLOYMENT: IterationDemo_1.0.0-SNAPSHOT=com.myspace:IterationDemo:1.0.0-SNAPSHOT
+# Git Repository URL: The URL of the repository with your React application source code.
+SOURCE_REPOSITORY_URL: https://github.com/JairoLedezma/sample-dmn-iteration.git
+# Select master branch from our repo
+SOURCE_REPOSITORY_REF: master
+The context directory
+CONTEXT_DIR: ""
+Sets the cpu limit to ensure that both the http and https deployments have a pod
+KIE_SERVER_CPU_LIMIT: 2
+Sets the cpu request 
+KIE_SERVER_CPU_REQUEST: 300m
