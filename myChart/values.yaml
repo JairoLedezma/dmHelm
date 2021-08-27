@@ -11,7 +11,7 @@ CREDENTIALS_SECRET: credentials
 KIE_SERVER_HTTPS_SECRET: https-keystore
 
 KIE_SERVER_CONTAINER_DEPLOYMENT: IterationDemo_1.0.0-SNAPSHOT=com.myspace:IterationDemo:1.0.0-SNAPSHOT
-# Git Repository URL: The URL of the repository with your React application source code.
+# Repo for the dmn project
 SOURCE_REPOSITORY_URL: https://github.com/JairoLedezma/sample-dmn-iteration.git
 # Select master branch from our repo
 SOURCE_REPOSITORY_REF: master
